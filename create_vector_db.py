@@ -16,5 +16,3 @@ embeddings = GoogleGenerativeAIEmbeddings(model="gemini-embedding-001")
 vector_store = FAISS.from_documents(documents=chunks, embeddings=embeddings)
 vector_store.save_local("faiss_index")
 
-
-print("Vector database created and saved locally as 'faiss_index'.")
